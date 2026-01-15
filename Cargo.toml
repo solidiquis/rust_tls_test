@@ -1,0 +1,15 @@
+[package]
+name = "sift_hello"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sift_rs = "0.7.1"
+tokio = { version = "1.49.0", features = ["full"] }
+tonic = { version = "^0.12", features = ["tls-native-roots", "tls", "tls-roots", "tls-webpki-roots"] }
+tower = "^0.4"
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
