@@ -2,6 +2,8 @@
 name = "sift_hello"
 version = "0.1.0"
 edition = "2024"
+repository = "https://github.com/solidiquis/rust_tls_test"
+
 
 [dependencies]
 sift_rs = "0.7.1"
