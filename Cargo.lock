@@ -1095,7 +1095,7 @@ checksum = "96ad1fc4f2993c74175fb5c85949c7c6e96b2a83594c9bdbe99f60ed8ab0f954"
 
 [[package]]
 name = "sift_hello"
-version = "0.1.0"
+version = "0.3.0"
 dependencies = [
  "sift_rs",
  "tokio",
