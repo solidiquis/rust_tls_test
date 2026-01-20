@@ -62,7 +62,7 @@ impl SiftChannelBuilder {
 
                 if self.use_tls {
                     chan = chan
-                        .tls_config(ClientTlsConfig::new().with_enabled_roots())
+                        .tls_config(ClientTlsConfig::new().with_native_roots())
                         .expect("failed to configure TLS");
                 }
                 chan
